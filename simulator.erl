@@ -32,7 +32,7 @@ dispatcher(Filename_6043,Filename_5937,Tube_file)->                       %%% Di
     spawn(get_coordinates, read_coordinates, [Filename_6043,drone_1,Tube_file]),
     spawn(get_coordinates, read_coordinates, [Filename_5937,drone_2,Tube_file]).
     
-simulate(Filename_6043,Filename_5937,Tube_file) ->                        %%% First function to be called to start simulation
+simulate(Filename_6043,Filename_5937,Tube_file) ->                        %%% First function to be called to start simulation calling for test
     {ok, D1} = file:open("6043_report.txt", [write]),
     {ok, D2} = file:open("5937_report.txt", [write]),
     {ok, L1} = file:open("6043_Communication.log", [write]),
